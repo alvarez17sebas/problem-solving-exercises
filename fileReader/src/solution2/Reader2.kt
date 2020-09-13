@@ -1,19 +1,24 @@
-open class ReaderArchivo(var file: String) : Reader {
+package solution2
 
+import EmptyFileException
+
+abstract class Reader2(var file: String) {
     var index: Int = -1
 
-    override fun read(): String {
+    fun read(): String{
         if ("" == file)
             throw EmptyFileException("Archivo vacio, no se puede realizar ninguna operación.")
         index++
 
         if (index >= file.length) return "-1"
 
-        return file[index].toString()
+        return filter()
     }
 
-    override fun close() {
+    fun close(){
         file = ""
         index = -1
     }
+
+    abstract fun filter(): String
 }

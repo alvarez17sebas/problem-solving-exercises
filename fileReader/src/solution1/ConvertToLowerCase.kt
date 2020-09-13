@@ -1,4 +1,6 @@
-class ConvertToLowerCase(file: String) : ReaderArchivo(file) {
+package solution1
+
+class ConvertToLowerCase(file: String) : FileReader(file) {
 
     override fun read(): String {
         var letter: String = super.read()

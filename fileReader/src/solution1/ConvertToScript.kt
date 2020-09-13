@@ -1,4 +1,8 @@
-class ConvertToScript(file: String) : ReaderArchivo(file) {
+package solution1
+
+import solution1.FileReader
+
+class ConvertToScript(file: String) : FileReader(file) {
 
     override fun read(): String {
         var letra: String = super.read()

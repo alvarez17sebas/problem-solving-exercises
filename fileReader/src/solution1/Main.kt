@@ -1,3 +1,7 @@
+package solution1
+
+import EmptyFileException
+
 fun main(args: Array<String>){
 
     try {
