@@ -1,6 +1,8 @@
-class Email : Notify() {
+class Email(private val emails: List<String>) : Notify {
 
     override fun notify(message: String) {
-        println("Email: $message")
+        emails.forEach{ email ->
+            println("Email to: $email message -> $message")
+        }
     }
 }

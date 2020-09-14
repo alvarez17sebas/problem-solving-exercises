@@ -1,3 +1,3 @@
-abstract class Notify() {
-    abstract fun notify(message: String)
+ interface Notify {
+     fun notify(message: String)
 }

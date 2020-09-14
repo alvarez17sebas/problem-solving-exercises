@@ -1,7 +1,8 @@
-class Sms : Notify() {
+class Sms(private val cellPhoneNumbers: List<String>) : Notify {
 
     override fun notify(message: String) {
-        println("Sms: $message")
+        cellPhoneNumbers.forEach{ number ->
+            println("Sms to: $number message -> $message")
+        }
     }
-
 }
