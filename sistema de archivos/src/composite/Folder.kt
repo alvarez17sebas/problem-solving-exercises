@@ -27,7 +27,7 @@ abstract class Folder(name: String, price: Int) : FileManager(name, price) {
 
         fileManagerList.forEach {
             totalWeight += it.weight
-            if(it.hasChildren() > 0){
+            if (it.hasChildren() > 0) {
                 totalWeight += it.calculateTotalPrice()
             }
         }
@@ -39,7 +39,7 @@ abstract class Folder(name: String, price: Int) : FileManager(name, price) {
         println("Root normal.Folder name: [${this.name}]")
         fileManagerList.forEach {
             println(it)
-            if (it.hasChildren() > 0){
+            if (it.hasChildren() > 0) {
                 it.showChildren()
             }
         }

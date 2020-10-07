@@ -17,6 +17,6 @@ class MusicFolder(name: String, weight: Int) : Folder(name, weight) {
 
         copyFolder.fileManagerList = copyFileManageList
 
-        return  copyFolder
+        return copyFolder
     }
 }

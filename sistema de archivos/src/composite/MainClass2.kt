@@ -1,6 +1,6 @@
 package composite
 
-fun main(){
+fun main() {
     var rootMusicFolder: FileManager = MusicFolder("root", 0)
     var teBoteSong: FileManager = File("Te bote.mp3", 10)
     var helloSong: FileManager = File("Hello.mp3", 20)
